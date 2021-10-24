@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 NLW/Heat - Mission Origin
 ## Projeto  Crachá Virtual  DoWhile 2021📋
 ---
@@ -12,3 +13,7 @@
 - Parabéns a Rocketseat 🚀 e a todos os envolvidos.
 - Maykão e ao seu MIT, explicações e exemplos para fixar o conteúdo nota 💯.
 - Jake, conteúdo nota 💯 e sua explicação de API como sendo restaurante foi muito boa.
+=======
+# cracha-nlw-desktop
+Versão desktop do crachá virtual
+>>>>>>> 145576c340bffc8fdb92d76bf0a9e9c95ab18505
