@@ -1,24 +1,42 @@
 * {
     margin: 0;
 }
+@keyframes shine-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.linkedin {
+    animation: shine-animation 5s 0.3s;
+}
+.twitch {
+    animation: shine-animation 5s 0.3s;
+}
+.youtube {
+    animation: shine-animation 5s 0.3s;
+}
 
  html,
  body {
-    --black: hsl(240, 6%, 13%);
+    --black: hsl(195, 93%, 17%);
     --grey: hsl(240, 9%, 89%);
     
     height: 100%;
-     font-family: 'Roboto', sans-serif;
+     font-family: 'Abel', sans-serif;
      -webkit-font-smoothing: antialiased;
  }
 
  body {
      display: grid;
      place-items: center;
+     background-color: #000D21;
  }
 
- main {
-     background: url(images/background.svg) no-repeat center/cover;
+ main { 
+    background: url(images/background.svg) no-repeat center/cover;
      width: 100vw;
      min-height: 812px;
      height: 100vh;
