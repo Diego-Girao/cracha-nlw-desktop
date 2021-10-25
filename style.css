@@ -1,99 +1,140 @@
 * {
     margin: 0;
 }
-@keyframes shine-animation {
+
+html,
+body {
+    --black: hsl(195, 93%, 17%);
+    --grey: hsl(240, 9%, 89%);
+
+    height: 100%;
+    font-family: 'Abel', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: #000D21;
+}
+
+@keyframes animation-main {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
-.linkedin {
-    animation: shine-animation 5s 0.3s;
-}
-.twitch {
-    animation: shine-animation 5s 0.3s;
-}
-.youtube {
-    animation: shine-animation 5s 0.3s;
+
+main {
+    animation: animation-main 5s 0.3s;
 }
 
- html,
- body {
-    --black: hsl(195, 93%, 17%);
-    --grey: hsl(240, 9%, 89%);
-    
-    height: 100%;
-     font-family: 'Abel', sans-serif;
-     -webkit-font-smoothing: antialiased;
- }
-
- body {
-     display: grid;
-     place-items: center;
-     background-color: #000D21;
- }
-
- main { 
+main {
     background: url(images/background.svg) no-repeat center/cover;
-     width: 100vw;
-     min-height: 812px;
-     height: 100vh;
- }
- 
- .container {
-     max-width: 250px;
-     margin-left: auto;
-     margin-right: auto;
-     text-align: center;
-     color: var(--grey);
- }
+    width: 100vw;
+    min-height: 500px;
+    height: 100vh;
+}
 
- .avatar {
-     width: 10rem;
-     margin: 11.5rem auto 0;
-     position: relative;
+.container {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: var(--grey);
+}
+
+.avatar {
+    width: 10rem;
+    margin: 11.5rem auto 0;
+    position: relative;
+    margin-top: 23.5rem;
+}
+
+.avatar span {
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+}
+
+.avatar>img {
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+a {
+    color: var(--grey);
+    text-decoration: none;
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+p {
+    margin-top: 7rem;
+    font-size: 1.5rem;
+}
+
+ul {
+    margin-top: 8rem;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+@keyframes shine-animation {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.1;
     }
 
- .avatar span {
-     position: absolute;
-     top: -15px;
-     z-index: 1;
- }
-
- .avatar > img {
-     width: 10rem;
-     height: 11.5rem;
-     object-fit: cover;
-     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    100% {
+        opacity: 1;
     }
+}
 
- h1 {
-     font-size: 1.5rem;
-     margin-top: 1.5rem;
- }
+.linkedin {
+    animation: shine-animation 3s;
+}
 
- a {
-     color: var(--grey);
-     text-decoration: none;
-     margin-top: 0.25rem;
-     display: flex;
-     gap: 0.75rem;
-     align-items: center;
-     justify-content: center;
-     
- }
+.twitch {
+    animation: shine-animation 3s;
+}
 
- p {
-     margin-top: 2rem;
- }
+.youtube {
+    animation: shine-animation 3s;
+}
 
- ul {
-     margin-top: 4rem;
-     list-style: none;
-     padding: 0;
-     display: flex;
-     gap: 0.5rem;
-     justify-content: center;
- }
+
+@media (min-width: 720px) {
+    main {
+        background: url(images/background.svg) no-repeat center/cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 960px) {
+    main {
+        background: url(images/background.svg) no-repeat center/cover;
+        width: 100%;
+        height: 100%;
+    }
+}
