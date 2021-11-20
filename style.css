@@ -35,7 +35,7 @@ main {
 main {
     background: url(images/background.svg) no-repeat center/cover;
     width: 100vw;
-    min-height: 500px;
+    min-height: 950px;
     height: 100vh;
 }
 
@@ -89,11 +89,11 @@ p {
 }
 
 ul {
-    margin-top: 8rem;
+    margin-top: 50px;
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 3rem;
+    gap: 1.5rem;
     justify-content: center;
 }
 
