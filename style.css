@@ -1,140 +1,138 @@
 * {
-    margin: 0;
+	margin: 0;
 }
 
 html,
 body {
-    --black: hsl(195, 93%, 17%);
-    --grey: hsl(240, 9%, 89%);
+	--black: hsl(196, 94%, 7%);
+	--grey: hsl(240, 9%, 89%);
 
-    height: 100%;
-    font-family: 'Abel', sans-serif;
-    -webkit-font-smoothing: antialiased;
+	height: 100%;
+	font-family: "Abel", sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 
 body {
-    display: grid;
-    place-items: center;
-    background-color: #000D21;
+	display: grid;
+	place-items: center;
+	background-color: var(--black);
 }
 
 @keyframes animation-main {
-    0% {
-        opacity: 0;
-    }
+	0% {
+		opacity: 0;
+	}
 
-    100% {
-        opacity: 1;
-    }
+	100% {
+		opacity: 1;
+	}
 }
 
 main {
-    animation: animation-main 5s 0.3s;
+	animation: animation-main 5s 0.3s;
 }
 
 main {
-    background: url(images/background.svg) no-repeat center/cover;
-    width: 100vw;
-    min-height: 935px;
-    height: 100vh;
+	background: url(images/background.svg) no-repeat center/cover;
+	width: 100vw;
+	min-height: 935px;
+	height: 100vh;
 }
 
 .container {
-    max-width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color: var(--grey);
+	max-width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: var(--grey);
 }
 
 .avatar {
-    width: 10rem;
-    margin: 11.5rem auto 0;
-    position: relative;
-    margin-top: 23.5rem;
+	width: 10rem;
+	margin: 11.5rem auto 0;
+	position: relative;
+	margin-top: 23.5rem;
 }
 
 .avatar span {
-    position: absolute;
-    top: -15px;
-    z-index: 1;
+	position: absolute;
+	top: -15px;
+	z-index: 1;
 }
 
-.avatar>img {
-    width: 10rem;
-    height: 11.5rem;
-    object-fit: cover;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+.avatar > img {
+	width: 10rem;
+	height: 11.5rem;
+	object-fit: cover;
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
 h1 {
-    font-size: 2rem;
-    margin-top: 0.5rem;
+	font-size: 2rem;
+	margin-top: 0.5rem;
 }
 
 a {
-    color: var(--grey);
-    text-decoration: none;
-    margin-top: 0.5rem;
-    display: flex;
-    gap: 0.75rem;
-    align-items: center;
-    justify-content: center;
-
+	color: var(--grey);
+	text-decoration: none;
+	margin-top: 0.5rem;
+	display: flex;
+	gap: 0.75rem;
+	align-items: center;
+	justify-content: center;
 }
 
 p {
-    margin-top: 7rem;
-    font-size: 1.5rem;
+	margin-top: 1rem;
+	font-size: 1.5rem;
 }
 
 ul {
-    margin-top: 50px;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
+	margin-top: 20px;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	gap: 1.5rem;
+	justify-content: center;
 }
 
 @keyframes shine-animation {
-    0% {
-        opacity: 0;
-    }
-    50%{
-        opacity: 0.1;
-    }
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.1;
+	}
 
-    100% {
-        opacity: 1;
-    }
+	100% {
+		opacity: 1;
+	}
 }
 
 .linkedin {
-    animation: shine-animation 3s;
+	animation: shine-animation 3s;
 }
 
 .twitch {
-    animation: shine-animation 3s;
+	animation: shine-animation 3s;
 }
 
 .youtube {
-    animation: shine-animation 3s;
+	animation: shine-animation 3s;
 }
 
-
 @media (min-width: 720px) {
-    main {
-        background: url(images/background.svg) no-repeat center/cover;
-        width: 100%;
-        height: 100%;
-    }
+	main {
+		background: url(images/background.svg) no-repeat center/cover;
+		width: 100%;
+		height: 100%;
+	}
 }
 
 @media (min-width: 960px) {
-    main {
-        background: url(images/background.svg) no-repeat center/cover;
-        width: 100%;
-        height: 100%;
-    }
+	main {
+		background: url(images/background.svg) no-repeat center/cover;
+		width: 100%;
+		height: 100%;
+	}
 }
